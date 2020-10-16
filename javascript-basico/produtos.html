@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <script src="./js/funcoes.js"></script>
+
+    <title>Produtos - Full Stack Eletro</title>
+  </head>
+  <body>
+    <!-- Início do Menu -->
+    <nav class="menu">
+      <a href="index.html"><img src="imagens/logo.jpeg" width="100px" /></a>
+      <a href="produtos.html">Nossos produtos</a>
+      <a href="lojas.html">Nossas lojas</a>
+      <a href="fale_conosco.html">Fale conosco</a>
+    </nav>
+
+    <!--FIM DO MENU -->
+
+    <header>
+      <h2>Produtos</h2>
+    </header>
+    <hr />
+
+    <section class="categorias">
+      <h3>Categorias</h3>
+      <ul>
+        <li onclick="obterTodasCategorias()">Todos (12)</li>
+        <li onclick="filtrarCategorias('geladeira')">Geladeiras (3)</li>
+        <li onclick="filtrarCategorias('fogao')">Fogões (2)</li>
+        <li onclick="filtrarCategorias('microondas')">Microondas (3)</li>
+        <li onclick="filtrarCategorias('lavadora')">Lavadoura de roupas (2)</li>
+        <li onclick="filtrarCategorias('lavalouca')">Lava-louças (2)</li>
+      </ul>
+    </section>
+
+    <section class="produtos">
+        <div class="box-produto" id="geladeira">
+          <img src="./imagens/geladeira_brastemp.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)" />
+          <br />
+          <p class='descricao'>Geladeira Frost Free Brastemp Side Inverse 540 litros</p>
+          <hr />
+          <p class="descricao"><strike>R$ 6.389,00</strike></p>
+          <br />
+          <p class="preco">R$ 5.019,00</p>
+        </div>
+
+        <div class="box-produto" id="geladeira">
+          <img src="./imagens/refrigerador_brastemp.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)" />
+          <br />
+          <p class="descricao">Geladeira Frost Free Brastemp Branca 375 litros</p>
+          <hr />
+          <p class="descricao"><strike>R$ 2.068,60</strike></p>
+          <br />
+          <p class="preco">R$ 1.910,90</p>
+        </div>
+
+        <div class="box-produto" id="geladeira">
+          <img src="./imagens/refrigerador_consul.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Geladeira Frost Free Consul Prata 340 litros</font
+          >
+          <hr />
+          <p class="descricao"><strike>R$ 2.199,90</strike></p>
+          <br />
+          <p class="preco">R$ 2.069,00</p>
+        </div>
+
+        <div class="box-produto"id="fogao">
+          <img src="./imagens/fogao_consul.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Fogão 4 Bocas Consul Inox com Mesa de Vidro</p>
+          <hr />
+          <p class="descricao"><strike>R$ 1.209,90</strike></p>
+          <br />
+          <p class="preco">R$ 1.129,00</p>
+        </div>
+
+        <div class="box-produto" id="fogao">
+          <img src="./imagens/fogao_monaco.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Fogão de Piso 4 Bocas Atlas Monaco com Atendimento Automático</p>
+          <hr />
+          <p class="descricao"><strike>R$ 609,90</strike></p>
+          <br />
+          <p class="preco">R$ 519,70</p>
+        </div>
+
+        <div class="box-produto" id="microondas">
+          <img src="./imagens/microondas_consul.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Micro-ondas Consul 32 Litros Inox 220V</p>
+          <hr />
+          <p class="descricao"><strike>R$ 580,90</strike></p>
+          <br />
+          <p class=preco>R$ 409,88</p>
+        </div>
+
+        <div class="box-produto" id="microondas">
+          <img src="./imagens/microondas_philco.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Microondas 25L Espelhado Philco 220V</p>
+          <hr />
+          <p class="descricao"><strike>R$ 508,70</strike></p>
+          <br />
+          <p class=preco>R$464,53</p>
+        </div>
+
+        <div class="box-produto" id="microondas">
+          <img src="./imagens/microondas_eletrolux.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Forno de Microondas Electrolux 20L Branco</p>
+          <hr />
+          <p class="descricao"><strike>R$ 459,90</strike></p>
+          <br />
+          <p class="preco">R$ 436,05</p>
+        </div>
+
+        <div class="box-produto" id="lavalouca">
+          <img src="./imagens/lava_loucas_eletrolux.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Lava-Louça Electrolux Inox com 10 Serviços, 06 Programas de
+            Lavagens.</p>
+          <hr />
+          <p class="descricao"><strike>R$ 3.599,00</strike></p>
+          <br />
+          <p class="preco">R$ 2.799,90</p>
+        </div>
+        
+        <div class="box-produto" id="lavalouca">
+          <img src="./imagens/lava_loucas.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Lava Louça Compacta 8 Serviços Branca 127V Brastemp</p>
+          <hr />
+          <p class="descricao"><strike>R$ 1.970,50</strike></p>
+          <br />
+          <p class="preco">R$ 1.730,61</p>
+        </div>
+
+        <div class="box-produto" id="lavadora">
+          <img src="./imagens/lavadora_brastemp.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Lavadora de Roupas Brastemp 11 kg com Turbo Perfomance Branca</p>
+          <hr />
+          <p class="descricao"><strike>R$ 1.699,00</strike></p>
+          <br />
+          <p class="preco">R$ 1.214,10</p>
+        </div>
+
+        <div class="box-produto" id="lavadora">
+          <img src="./imagens/lavadora_philco.jpeg" width="120px" onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)"/>
+          <br />
+          <p class="descricao">Lavadora de Roupas Philco Inverter 12KG</p>
+          <hr />
+          <p class="descricao"><strike>R$ 2.399,90</strike></p>
+          <br />
+          <p class="preco">R$ 2.179,90</p>
+        </div>
+    </section>
+
+    <footer id="rodape">
+      <p id="formas_pagamento">
+        <b>Formas de pagamento</b>
+      </p>
+      <img
+        width="420px"
+        src="./imagens/formas-pagamento.jpeg"
+        alt="Formas de pagamento"
+      />
+      <p face="Arial" size="2">&copy; Recode Pro</p>
+    </footer>
+
+  </body>
+</html>
