@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#formas_pagamento {
+  color: red;
+}
+
+.menu {
+  background-color: #ff0000;
+}
+
+.menu a {
+  color: white;
+}
