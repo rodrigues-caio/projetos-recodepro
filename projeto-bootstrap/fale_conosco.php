@@ -42,15 +42,15 @@
       </div>
     </section>
   <div class="container">
-    <form class="feedback bg-info" action="" method="POST">
+    <form class="feedback bg-info text-white" action="" method="POST">
       <div class="form-group">
         <label for="exampleFormControlInput1">Nome:</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1">
+        <input type="text" class="form-control" name="nome" id="exampleFormControlInput1">
       </div>
       
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Mensagem:</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" name="mensagem" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <input class="btn btn-warning" type="submit" value="Enviar" />
