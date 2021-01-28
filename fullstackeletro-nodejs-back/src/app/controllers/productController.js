@@ -2,7 +2,7 @@ const Product = require('../models/Product');
 
 module.exports = {
   index: (request, response) => {
-    Product.all((products) => {
+    Product.all(function (products) {
       if (!products) {
         return response.status(404).json({ error: 'Products not found' });
       }
