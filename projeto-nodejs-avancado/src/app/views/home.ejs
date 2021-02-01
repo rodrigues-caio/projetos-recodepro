@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto NodeJs</title>
 
+    <link rel="stylesheet" href="/styles/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,10 +14,10 @@
     />
   </head>
   <body>
-    <div class="container m-5">
-      <h1 class="title">Busque o seu perfil do GitHub</h1>
+    <div class="content-page">
+      <h1>Busque o seu perfil do <span>GitHub</span></h1>
 
-      <form class="w-50" method="POST" action="/perfil">
+      <form class="w-50 h-100" method="POST" action="/perfil">
         <div class="form-group">
           <label for="username">Insira o seu username</label>
           <input
@@ -30,7 +31,10 @@
           <label for="cor">Escolha a sua cor favorita:</label>
           <input type="color" class="form-control sm" id="cor" name="cor" />
         </div>
-        <button type="submit" class="btn btn-info btn-lg mt-3 text-white">
+        <button
+          type="submit"
+          class="btn btn-info btn-lg w-100 h-20 mt-3 text-white"
+        >
           Enviar
         </button>
       </form>

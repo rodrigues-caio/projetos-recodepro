@@ -1,3 +1,47 @@
+:root {
+  --primary-color: #db0a8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-page {
+  width: 50%;
+  height: 20%;
+  position: relative;
+}
+
+.content-page::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 200%;
+  right: -30px;
+  top: 0;
+  background-color: var(--primary-color);
+}
+
+.content-page {
+  display: flex;
+}
+
+.content-page h1 span {
+  border-bottom: 3px solid var(--primary-color);
+}
+
 article img {
   width: 200px;
   height: 200px;
