@@ -1,0 +1,16 @@
+footer {
+  width: 98%;
+  padding-top: 10px;
+  margin: 20px auto;
+  border-top: 1px solid #d10b85;
+}
+
+footer p {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+footer p span {
+  color: #d10b85;
+}

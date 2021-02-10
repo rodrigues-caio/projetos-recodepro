@@ -1,0 +1,22 @@
+header {
+  width: 98%;
+  margin: 20px auto;
+  border-bottom: 1px solid #d10b85;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo h1 {
+  color: #fff;
+}
+
+header .logo h2 {
+  color: #d10b85;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
