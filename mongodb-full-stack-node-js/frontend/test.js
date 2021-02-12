@@ -1,0 +1,3 @@
+const pessoa = {
+  name: 'Caio',
+};
