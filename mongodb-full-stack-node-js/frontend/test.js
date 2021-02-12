@@ -1,3 +1,0 @@
-const pessoa = {
-  name: 'Caio',
-};
